@@ -5,16 +5,16 @@ defineProps({ blok: Object })
 <template>
   <section v-editable="blok" class="comparison my-18 md:my-32 max-w-[1400px] mx-auto">
     <h2 class="font-headline uppercase text-2xl text-center text-balance mb-6">
-      {{ blok.heading }}
+      <UtilsBlinker>{{ blok.heading }}</UtilsBlinker>
     </h2>
     <div class="grid lg:grid-cols-2 gap-8 text-black text-md font-medium">
-      <div class="bg-white p-5 positive">
+      <div class="bg-white p-5 positive shadow-yellow">
         <h3 class="font-extrabold text-lg flex items-center gap-2 mb-6">
           El model de <SiteLogo class="h-[1.15em]" />
         </h3>
         <UtilsRichText :content="blok.compromis" />
       </div>
-      <div class="bg-white p-5 negative">
+      <div class="bg-white p-5 negative shadow-blue">
         <h3 class="font-extrabold text-lg mb-6">
           El model del PP
         </h3>

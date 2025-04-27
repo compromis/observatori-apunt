@@ -1,11 +1,26 @@
 <script setup>
 const props = defineProps({ blok: Object })
 const tag = computed(() => props.blok.url ? 'a' : 'div')
+const colors = ['red', 'green', 'blue', 'yellow']
+const randColor = () => {
+  const randomIndex = Math.floor(Math.random() * colors.length)
+  return colors[randomIndex]
+}
 </script>
 
 <template>
-  <article v-editable="blok">
-    <Component :is="tag" :href="blok.url" class="flex flex-col gap-2 text-black bg-white p-site w-full h-full">
+  <article
+    v-editable="blok"
+    class="shadow-color"
+    :style="{
+      '--color': `var(--color-${randColor()}-shadow)`,
+    }"
+  >
+    <Component
+      :is="tag"
+      :href="blok.url"
+      class="flex flex-col gap-2 text-black bg-white p-site w-full"
+    >
       <div v-if="blok.show_logo">
         <img src="~/assets/images/apunt.svg" alt="À Punt" class="h-10" />
       </div>

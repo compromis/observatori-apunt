@@ -1,11 +1,14 @@
 <script setup>
+import { animate, utils, onScroll, createTimeline } from 'animejs'
+
 defineProps({ blok: Object })
+
 </script>
 
 <template>
   <header v-editable="blok" class="pt-[10vh] max-w-[1400px] mx-auto">
-    <h1 class="font-headline uppercase text-5xl text-balance text-center">
-      {{ blok.title }}
+    <h1 class="page-title font-headline uppercase text-5xl text-balance text-center">
+      <UtilsBlinker immediate>{{ blok.title }}</UtilsBlinker>
     </h1>
     <div class="intro-columns">
       <UtilsRichText :content="blok.intro" class="my-12 font-medium text-md text-balance -tracking-[.03em]" />
@@ -46,12 +49,6 @@ defineProps({ blok: Object })
     a {
       text-decoration: underline;
       color: var(--color-yellow);
-
-      &:hover {
-        text-decoration: none;
-        background-color: var(--color-yellow);
-        color: var(--color-black) !important;
-      }
     }
   }
 }

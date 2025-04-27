@@ -8,22 +8,21 @@ const head = useLocaleHead({
 useHead({
   htmlAttrs: { lang: head.value.htmlAttrs.lang, dir: head.value.htmlAttrs.dir, class: 'bg-black text-white' },
   meta: [
-    { name: 'theme-color', content: '#000' },
-    { name: 'msapplication-TileColor', content: '#000' },
+    { name: 'theme-color', content: '#1b2022' },
+    { name: 'msapplication-TileColor', content: '#1b2022' },
     { name: 'apple-mobile-web-app-title', content: 'Observatori Apunt' },
     ...head.value.meta
   ],
   link: [
-    { rel: 'icon', type: 'image/png', href: '/favicons/favicon-96x96.png', sizes: '96x96' },
-    { rel: 'icon', type: 'image/svg+xml', href: '/favicons/favicon.svg' },
-    { rel: 'shortcut icon', href: '/favicons/favicon.ico' },
-    { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicons/apple-touch-icon.png' },
-    { rel: 'manifest', href: '/favicons/site.webmanifest' },
+    { rel: 'icon', type: 'image/x-icon', href: 'https://compromis.net/sub/icons/favicon.ico' },
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://compromis.net/sub/icons/favicon32.png' },
+    { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://compromis.net/sub/icons/favicon192.png' },
+    { rel: 'stylesheet', href: 'https://compromis.net/sub/fonts/manrope.css?variable' },
     { rel: 'stylesheet', href: 'https://compromis.net/sub/fonts/manrope.css?variable' },
     ...head.value.link
   ],
   script: [
-    // { src: 'https://cloud.umami.is/script.js', 'data-website-id': '', defer: true }
+    { src: 'https://cloud.umami.is/script.js', 'data-website-id': '', defer: true }
   ]
 })
 </script>
