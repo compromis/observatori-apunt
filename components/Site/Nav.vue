@@ -69,7 +69,7 @@ onMounted(() => {
   }
 
   &-languages {
-    gap: var(--spacing-site);
+    gap: 1em;
 
     :deep(a) {
       color: var(--color-white);
