@@ -30,7 +30,8 @@ onMounted(() => {
           :class="{ 'current': locale === lang.code }"
           :aria-current="locale === lang.code ? 'page' : null"
         >
-          {{ lang.name }}
+          <span class="hidden md:block">{{ lang.name }}</span>
+          <span class="md:hidden uppercase">{{ lang.code }}</span>
         </a>
       </div>
     </nav>

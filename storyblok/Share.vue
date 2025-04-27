@@ -32,8 +32,8 @@ const share = async () => {
 </script>
 
 <template>
-  <section class="py-24 max-w-[800px] mx-auto">
-    <div class="p-site text-white">
+  <section class="pt-28 pb-0 lg:py-24 max-w-[800px] mx-auto">
+    <div class="text-white">
       <div class="border-2 border-white overflow-clip">
         <div class="py-site px-8 border-b-2 border-white">
           <h2 class="font-extrabold text-lg">{{ blok.heading }}</h2>

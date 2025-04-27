@@ -15,8 +15,8 @@
         </p>
       </div>
       <div class="text-nowrap flex gap-4 md:ms-auto">
-        <a href="mailto:europarl@compromis.net">europarl@compromis.net</a>
-        <a href="https://compromis.net">{{ $t('global.privacy_policy') }}</a>
+        <a href="mailto:observatoriapunt@compromis.net">observatoriapunt@compromis.net</a>
+        <a href="https://compromis.net/avis-legal">{{ $t('global.privacy_policy') }}</a>
       </div>
     </div>
   </footer>

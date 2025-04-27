@@ -9,7 +9,7 @@ useHead({
 </script>
 
 <template>
-  <section v-editable="blok" class="form p-site max-w-[1000px] mx-auto flex flex-col gap-site items-center justify-center text-center font-medium">
+  <section id="denuncia" v-editable="blok" class="form p-site max-w-[1000px] mx-auto flex flex-col gap-site items-center justify-center text-center font-medium">
     <UtilsRichText :content="blok.text" class="text-md" />
     <div v-html="blok.embed" />
   </section>

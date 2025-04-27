@@ -3,11 +3,11 @@ defineProps({ blok: Object })
 </script>
 
 <template>
-  <section v-editable="blok" class="comparison my-16 max-w-[1400px] mx-auto">
+  <section v-editable="blok" class="comparison my-18 md:my-32 max-w-[1400px] mx-auto">
     <h2 class="font-headline uppercase text-2xl text-center text-balance mb-6">
-      → {{ blok.heading }}
+      {{ blok.heading }}
     </h2>
-    <div class="grid grid-cols-2 gap-8 text-black text-md font-medium">
+    <div class="grid lg:grid-cols-2 gap-8 text-black text-md font-medium">
       <div class="bg-white p-5 positive">
         <h3 class="font-extrabold text-lg flex items-center gap-2 mb-6">
           El model de <SiteLogo class="h-[1.15em]" />
