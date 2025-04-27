@@ -1,10 +1,10 @@
 <script setup>
 defineProps({ blok: Object })
 
-useHead({
-  script: [
-    { src: 'https://server.fillout.com/embed/v1/' }
-  ]
+onMounted(() => {
+  const filloutScript = document.createElement('script')
+  filloutScript.setAttribute('src','https://server.fillout.com/embed/v1/')
+  document.body.appendChild(filloutScript)
 })
 </script>
 
