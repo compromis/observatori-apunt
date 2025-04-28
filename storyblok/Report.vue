@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps({ blok: Object })
+const { hasRichText } = useUtils()
 const tag = computed(() => props.blok.url ? 'a' : 'div')
 const colors = ['red', 'green', 'blue', 'yellow']
 const randColor = () => {
@@ -32,7 +33,7 @@ const randColor = () => {
       </div>
     </Component>
     <div
-      v-if="blok.comment"
+      v-if="hasRichText(blok.comment)"
       class="
       relative bg-yellow font-extrabold py-3 px-site text-base text-black
       before:content-[''] before:block before:absolute before:w-8 before:h-8 before:rotate-45 before:bg-yellow before:-top-2 before:left-site before-z-[2]"
