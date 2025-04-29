@@ -4,7 +4,7 @@ const { locale, t } = useI18n()
 
 /* Url and text */
 const url = computed(() => {
-  return 'https://observatoriapunt.com'
+  return 'https://observatoriapunt.compromis.net'
 })
 
 const text = computed(() => {
