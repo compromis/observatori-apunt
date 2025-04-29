@@ -7,7 +7,7 @@ defineProps({ blok: Object })
 
 <template>
   <header v-editable="blok" class="pt-[10vh] max-w-[1400px] mx-auto">
-    <h1 class="page-title font-headline uppercase text-5xl text-balance text-center">
+    <h1 class="page-title font-headline uppercase text-2xl md:text-5xl text-balance text-center">
       <UtilsBlinker immediate>{{ blok.title }}</UtilsBlinker>
     </h1>
     <div class="intro-columns">

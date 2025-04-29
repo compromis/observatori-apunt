@@ -9,7 +9,7 @@ defineProps({ blok: Object })
     </h2>
     <div class="grid lg:grid-cols-2 gap-8 text-black text-md font-medium">
       <div class="bg-white p-5 positive shadow-yellow">
-        <h3 class="font-extrabold text-lg flex items-center gap-2 mb-6">
+        <h3 class="font-extrabold text-lg md:flex md:items-center md:gap-2 mb-6">
           El model de <SiteLogo class="h-[1.15em]" />
         </h3>
         <UtilsRichText :content="blok.compromis" />
