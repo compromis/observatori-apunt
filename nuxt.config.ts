@@ -22,8 +22,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/eslint',
     '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxt/fonts',
+    '@nuxt/image'
   ],
 
   vite: {
